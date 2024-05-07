@@ -50,3 +50,21 @@ ScrollReveal().reveal(".blog-card", {
     ...scrollRevealOption,
     interval:500,
 });
+
+// Web Form to Google Sheets
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzcC5u_2xxmv9Tg7QJwTNICtw8K2Rw0O8y4dSVasWIkMqL3SHXBcNIT4LMr7LLra8sSdA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("subscribe-msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Thank you for subscribing!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  });
