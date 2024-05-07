@@ -31,6 +31,13 @@
     overflow: hidden;
 }
 
+.wod-section-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    overflow: hidden;
+}
+
 .section-header {
     position: relative;
     isolation: isolate;
@@ -82,9 +89,18 @@
     cursor: pointer;
 }
 
+.btn a {
+    color: var(--white);
+}
+
 .btn:hover {
     background-color: var(--white);
     color: var(--primary-color);
+}
+
+.btn a:hover {
+    color: var(--text-light);
+    background-color: transparent;
 }
 
 a {
@@ -119,6 +135,19 @@ body {
     background-repeat: no-repeat;
 }
 /* Header Image */
+
+/* WOD Header Image */
+.wod-header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.7)
+    ), url(../Assets/WOD/psi_img_003_WOD.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* WOD Header Image */
 
 /* Navigation Class */
 nav {
@@ -206,6 +235,13 @@ nav {
 }
 /* Header Container */
 
+/* WOD Header Container */
+.wod-header-container {
+    padding-block: 5rem;
+    height: 100vh;
+}
+/* WOD Header Container */
+
 /* Header Container [Paragraph Tag] */
 .header-container p {
     font-size: 1rem;
@@ -215,8 +251,18 @@ nav {
 }
 /* Header Container [Paragraph Tag] */
 
+/* WOD Header Container [Paragraph Tag] */
+.wod-header-container p {
+    font-size: 1rem;
+    font-family: var(--header-font);
+    color: var(--text-light);
+    margin-bottom: .5rem;
+    text-align: center;
+}
+/* WOD Header Container [Paragraph Tag] */
+
 /* Header Container [H1 Tag] */
-.header-container h1 {
+.wod-header-container h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 600;
@@ -224,6 +270,7 @@ nav {
     text-transform: uppercase;
     line-height: 3rem;
     color: var(--white);
+    text-align: center;
 }
 /* Header Container [H1 Tag] */
 
@@ -581,6 +628,12 @@ nav {
     background-color: var(--white);
 }
 
+.footer-col span {
+    color: var(--white);
+    font-size: .9rem;
+    font-weight: 100;
+}
+
 .footer-bar-link {
     position: relative;
     isolation: isolate;
@@ -617,6 +670,7 @@ nav {
     color: var(--text-dark);
 }
 /* Footer */
+
 
 /* For Devices that have a viewport greater than 480px */
 @media (width > 480px) {
@@ -691,6 +745,18 @@ nav {
     color: var(--white);
 }
 /* Header Container [H1 Tag] */
+
+/* WOD Header Container [H1 Tag] */
+.wod-header-container h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: var(--white);
+}
+/* WOD Header Container [H1 Tag] */
 
     .banner-grid {
         grid-auto-rows: 320px;
