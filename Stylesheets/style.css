@@ -38,6 +38,13 @@
     overflow: hidden;
 }
 
+.article-section-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    overflow: hidden;
+}
+
 .section-header {
     position: relative;
     isolation: isolate;
@@ -149,6 +156,17 @@ body {
 }
 /* WOD Header Image */
 
+.article-header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.7)
+    ), url(../Assets/WOD/psi_img_003_WOD.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Navigation Class */
 nav {
     position: fixed;
@@ -242,12 +260,29 @@ nav {
 }
 /* WOD Header Container */
 
+.article-header-container {
+    padding-block: 5rem;
+    height: 100vh;
+}
+
 /* Header Container [Paragraph Tag] */
 .header-container p {
     font-size: 1rem;
     font-family: var(--header-font);
     color: var(--text-light);
     margin-bottom: .5rem;
+}
+/* Header Container [Paragraph Tag] */
+
+/* Header Container [Paragraph Tag] */
+.header-container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: var(--white);
 }
 /* Header Container [Paragraph Tag] */
 
@@ -261,6 +296,14 @@ nav {
 }
 /* WOD Header Container [Paragraph Tag] */
 
+.article-header-container p {
+    font-size: 1rem;
+    font-family: var(--header-font);
+    color: var(--text-light);
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
 /* Header Container [H1 Tag] */
 .wod-header-container h1 {
     margin-bottom: 1rem;
@@ -273,6 +316,17 @@ nav {
     text-align: center;
 }
 /* Header Container [H1 Tag] */
+
+.article-header-container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: var(--white);
+    text-align: center;
+}
 
 /* Banner Grid */
 .banner-grid {
@@ -757,6 +811,16 @@ nav {
     color: var(--white);
 }
 /* WOD Header Container [H1 Tag] */
+
+.article-header-container h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: var(--white);
+}
 
     .banner-grid {
         grid-auto-rows: 320px;
