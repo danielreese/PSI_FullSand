@@ -304,7 +304,8 @@ nav {
 /* Banner Strip */
 .banner-strip {
     display: grid;
-    gap: 5px;
+    gap: 1px;
+    margin-top: -8px;
 }
 /* Banner Strip */
 
@@ -312,7 +313,8 @@ nav {
 .banner-strip-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 2px;
+
 }
 /* Banner Strip Card */
 
@@ -700,6 +702,7 @@ nav {
 
     .banner-strip {
         grid-template-columns: repeat(3, 1fr);
+        margin-top: -8px;
     }
 
     .banner-strip-card:nth-child(4n),
