@@ -1,0 +1,391 @@
+/* Poppins Font */
+/* ====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ====================================== */
+/* Poppins Font */
+
+/* Root Variables */
+:root {
+    --primary-color: #000;
+    --text-dark: #000;
+    --text-light: #31C4F3;
+    --extra-light: #fff;
+    --white: #fff;
+    --max-width: 1200px;
+    --header-font: "Poppins", sans-serif;
+}
+/* Root Variables */
+
+/* Universal Config for Webpage */
+/* ====================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    overflow: hidden;
+}
+
+.section-header {
+    position: relative;
+    isolation: isolate;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding-inline: 1rem;
+    font-size: 2rem;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.section-header::before,
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    max-width: 100px;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 1px solid var(--text-light);
+    border-bottom: 1px solid var(--text-light);
+    z-index: -1;
+}
+
+.section-header::after {
+    right: 100%;
+}
+
+.section-header::before {
+    left: 100%;
+}
+
+.section-description {
+    line-height: 1.75rem;
+    color: var(--text-light);
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--text-light);
+    border-radius: 5px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.btn a:hover {
+    color: var(--text-light);
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+/* ====================================== */
+/* Universal Config for Webpage */
+
+/* Header Image */
+.header {
+    background-color: #000;
+}
+/* Header Image */
+
+/* Navigation Class */
+nav {
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    z-index: 9;
+}
+/* Navigation Class */
+
+/* Navigation Bar */
+.nav-bar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--text-dark);
+}
+/* Navigation Bar */
+
+/* Navgation Logo */
+.nav-logo {
+    /* Original Max Width: max-width: 100px; */
+    max-width: 150px;
+}
+/* Navgation Logo */
+
+/* Navigation Menu Button */
+.nav-menu-btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+/* Navigation Menu Button */
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+    background-color: var(--primary-color);
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in;
+    z-index: -1;
+}
+/* Navigation Links */
+
+/* Navigation Links [Open] */
+.nav-links.open {
+    transform: translateY(0);
+}
+/* Navigation Links [Open] */
+
+/* Navigation Links with Navigation Logo */
+.nav-links .nav-logo {
+    display: none;
+}
+/* Navigation Links with Navigation Logo */
+
+/* Navigation Links A Tags */
+.nav-links a {
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 8px;
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+/* Navigation Links A Tags */
+
+/* Header Container */
+.header-container {
+    padding-block: 5rem;
+    height: 100vh;
+}
+/* Header Container */
+
+/* Footer */
+.footer {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    border-bottom: 10px solid var(--white);
+}
+
+.footer-container {
+    display: grid;
+    gap: 4rem;
+    text-align: center;
+}
+
+.footer-col img {
+    max-width: 225px;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.footer-socials {
+    margin-block: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-socials a {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 100%;
+    transition: 0.3s ease-in;
+}
+
+.footer-socials a:hover {
+    color: var(--white);
+    background-color: var(--text-light);
+}
+
+.footer-bar {
+    font-size: .9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.footer-col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.footer-col p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.footer-col p span {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.footer-col form {
+    padding: 5px;
+    width: 100%;
+    max-width: 350px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--text-dark);
+    border-radius: 5px;
+}
+
+.footer-col input {
+    padding: .75rem .5rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--text-light);
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.footer-col .btn:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+.footer-col span {
+    color: var(--white);
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.footer-bar-link {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: -10px;
+    margin-inline: auto;
+    width: 60px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bar-link::after {
+    position: absolute;
+    content: "";
+    top: 25%;
+    width: 125%;
+    height: 125%;
+    rotate: 45deg;
+    background-color: var(--white);
+    z-index: -1;
+}
+
+.footer-bar-link i {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.footer-bar-link span {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+/* Footer */
+
+/* For Devices that have a viewport greater than 768px */
+@media (width > 768px) {
+    nav {
+        padding: 2rem 1rem;
+        position: static;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-links {
+        padding: 0;
+        width: 100%;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .nav-links .nav-logo {
+        display: block;
+        max-width: 300px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .footer-col:nth-child(1) {
+        grid-area: 1/2/2/3;
+    }
+
+    .footer-col form {
+        margin-inline-start: unset;
+    }
+}
+/* For Devices that have a viewport greater than 768px */
