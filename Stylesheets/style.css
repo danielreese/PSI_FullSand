@@ -270,6 +270,10 @@ nav {
     color: var(--white);
     text-align: center;
 }
+
+.banner-card h4 a {
+    text-decoration: none;
+}
 /* Banner Card [h4] */
 
 /* Banner Card [nth Child [1] */
@@ -522,6 +526,11 @@ nav {
     max-width: 225px;
     margin-inline: auto;
     margin-block: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-light);
 }
 
 .footer-socials {
